@@ -1,27 +1,6 @@
-/**
- * =========================
- * JS (одна конверсия Binom + FB Pixel на TG кнопке)
- * =========================
- */
-
 // --- Settings ---
 const BOT_USERNAME = "LieScorebot"; // без @
 const GEO = "kz";
-const BINOM_CONVERSION_URL = "https://mobi-slon.com/click";
-
-// FB Pixel events
-const FB_EVENTS = {
-  quizStarted: "QuizStarted",
-  quizCompleted: "QuizCompleted",
-  goTelegram: "GoTelegramAfterQuiz" // это будет на кнопке TG
-};
-
-function fbTrackCustom(name){
-  try{
-    if(!ENABLE_PIXEL) return;
-    if(typeof fbq === "function") fbq("trackCustom", name);
-  }catch(e){}
-}
 
 // --- UTM capture ---
 function getQueryObj(){
@@ -260,8 +239,6 @@ function showResult(){
   resultCard.style.display = "block";
   resultCard.scrollIntoView({behavior:"smooth", block:"start"});
 
-  fbTrackCustom(FB_EVENTS.quizCompleted);
-
   // TG click handler — единая точка
   tgBtn.disabled = false;
   tgBtn.textContent = "🎙 Перейти в Telegram и проанализировать аудио";
@@ -276,23 +253,7 @@ function showResult(){
 
     tgBtn.disabled = true;
     tgBtn.textContent = "Отправляем…";
-
-    // ✅ FB Pixel на кнопку TG
-    fbTrackCustom(FB_EVENTS.goTelegram);
-    // (если хочешь стандартное событие — раскомментируй)
-    // try { if(ENABLE_PIXEL && typeof fbq==="function") fbq("track","Lead"); } catch(e){}
-
-    // ✅ Binom conversion только на кнопку TG
-    try{
-      if (typeof BPixelJS !== "undefined" && BPixelJS && typeof BPixelJS.conversion === "function") {
-        BPixelJS.conversion({ url: BINOM_CONVERSION_URL });
-      }
-    }catch(e){}
-
-    // дать 180мс, чтобы оба пикселя улетели
-    setTimeout(() => {
-      location.href = tgLink;
-    }, 180);
+    location.href = tgLink;
   };
 }
 
@@ -327,4 +288,3 @@ nextBtn.addEventListener("click", () => {
 // init
 quizCard.style.display = "block";
 render();
-fbTrackCustom(FB_EVENTS.quizStarted);
