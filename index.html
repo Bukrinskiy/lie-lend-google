@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <!-- =========================
+       BINOM PIXEL (BPixelJS)
+       run() оставляем (нужен clickid/bcid)
+       conversion() НЕ вызываем в head
+  ========================== -->
+  <script>
+  var BPixelJS;!function(){"use strict";var n={d:function(e,o){for(var t in o)n.o(o,t)&&!n.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:o[t]})},o:function(n,e){return Object.prototype.hasOwnProperty.call(n,e)}},e={};function o(n){!window.isPixelLoaded&&window.isPixelLoading?(window.pixelLoadedHandlers||(window.pixelLoadedHandlers=[]),window.pixelLoadedHandlers.push(n)):n()}function t(n){var e,o;return null!==(e=null===(o=window.BPIXEL_JS_CONFIG)||void 0===o?void 0:o[n])&&void 0!==e?e:void 0}function i(){var n;return(n=console).error.apply(n,arguments)}function r(n){return r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(n){return typeof n}:function(n){return n&&"function"==typeof Symbol&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n},r(n)}function a(){var n,e,o,t;return null!==(n=null!==(e=function(){if("object"!==r(window.tokens)||!window.tokens)return null;var n=window.tokens.bcid;return"string"!=typeof n?null:n}())&&void 0!==e?e:null!==(o=null==(t=document.cookie.match(new RegExp("(^|[ ;])".concat("bcid","=(.+?)(;|$)"))))?void 0:t[2])&&void 0!==o?o:null)&&void 0!==n?n:function(){var n,e,o=null!==(n=null==(e=window.location.search.match(new RegExp("(^|[&?])".concat("bcid","=(.*?)(&|$)"))))?void 0:e[2])&&void 0!==n?n:null;return"string"!=typeof o?null:o}()}function l(n,e){return"".concat(n).concat(e)}function d(n){var e=n.base,o=n.params,t=e||"?";return Object.entries(o).forEach((function(n){var e=n[0],o=n[1];"?"!==t[t.length-1]&&(t+="&"),t+="".concat(e,"=").concat(o)})),t}function u(n){var e=new Image;e.src=n,e.referrerPolicy="no-referrer-when-downgrade"}n.d(e,{default:function(){return c}});var c={config:function(n){!function(n){window.BPIXEL_JS_CONFIG=Object.assign({},window.BPIXEL_JS_CONFIG,n)}(n)},run:function(){var n,e,o,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};window.isPixelLoading=!0;var u,c,s,f=null!==(n=r.url)&&void 0!==n?n:t("url"),v=null!==(e=r.campaignKey)&&void 0!==e?e:t("campaignKey"),p=null!==(o=r.tokens)&&void 0!==o?o:{};void 0!==f?void 0!==v?(u=l(f,d({base:window.location.search,params:Object.assign({},p,{key:v,lp_type:"pixel"})})),c=function(){var n,e;window.isPixelLoading=!1,window.isPixelLoaded=!0,null===(n=window.pixelLoadedHandlers)||void 0===n||n.forEach((function(n){n()})),(e=a())?[{elements:document.querySelectorAll("a"),getHref:function(n){return n.getAttribute("href")},setHref:function(n,e){n.setAttribute("href",e)}},{elements:document.querySelectorAll("[data-href]"),getHref:function(n){return n.dataset.href||null},setHref:function(n,e){n.dataset.href=e}}].forEach((function(n){var o=n.elements,t=n.setHref,i=n.getHref;o.forEach((function(n){var o,r=i(n);r&&(/[?&]event[_\d]+=/.test(o=r)||/[?&]cnv_id=OPTIONAL(&|$)/.test(o)||/[?&]lp=(1|data_upd)(&|$)/.test(o))&&t(n,"".concat(r,"&bcid=").concat(e))}))})):i("Can't find click id")},(s=document.createElement("script")).src=u,s.async=!1,c&&(s.onload=c),document.head.appendChild(s)):i('"campaignKey" param must be passed'):i('"url" param must be passed')},update:function(){var n,e,r,c=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},s=null!==(n=c.url)&&void 0!==n?n:t("url"),f=null!==(e=c.updateKey)&&void 0!==e?e:t("updateKey"),v=null!==(r=c.tokens)&&void 0!==r?r:{};o((function(){if(void 0!==s)if(void 0!==f){var n=a();n?u(l(s,d({base:"?",params:Object.assign({},v,{upd_clickid:n,upd_key:f})}))):i("Can't find click id")}else i('"updateKey" param must be passed');else i('"url" param must be passed')}))},conversion:function(){var n,e,r=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},c=null!==(n=r.url)&&void 0!==n?n:t("url"),s=null!==(e=r.tokens)&&void 0!==e?e:{};o((function(){if(void 0!==c){var n=a();n||function(){var n;(n=console).warn.apply(n,arguments)}("Can't find click id"),u(l(c,d({base:"?",params:Object.assign({},s,{cnv_id:null!=n?n:"conversion_pixel"})})))}else i('"url" param must be passed')}))},onPixelLoaded:o,useTokens:function(n){o((function(){!function(n){"loading"!==document.readyState?n():document.addEventListener("DOMContentLoaded",n)}((function(){var e;n(null!==(e=window.tokens)&&void 0!==e?e:{})}))}))}};BPixelJS=e.default}();
+  </script>
+
+  <script>
+    BPixelJS.config({
+      url: 'https://mobi-slon.com/index.php',
+      campaignKey: 'fe5568e6c6574fb298695d977967273b',
+    });
+    BPixelJS.run();
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Проверка правды — тест + анализ аудио</title>
+  <meta name="description" content="Короткий тест: есть ли признаки возможной неискренности. Продолжение — анализ аудио в Telegram." />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <!-- =========================
+       Meta Pixel (как было)
+       НЕ ломаем: init + PageView
+  ========================== -->
+  <script>
+    const ENABLE_PIXEL = true;
+    const PIXEL_ID = "1052620673116886";
+
+    (function(){
+      if(!ENABLE_PIXEL) return;
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq) return;
+        n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+        if(!f._fbq) f._fbq=n;
+        n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[];
+        t=b.createElement(e); t.async=!0; t.src=v;
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', PIXEL_ID);
+      fbq('track', 'PageView');
+    })();
+  </script>
+
+  <style>
+    :root{
+      --bg:#07070a;
+      --card:#101018;
+      --card2:#0c0c12;
+      --text:#fff;
+      --muted:rgba(255,255,255,.74);
+      --muted2:rgba(255,255,255,.56);
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 24px 80px rgba(0,0,0,.62);
+      --btn:#ffffff;
+      --btnText:#0a0a10;
+      --ghost:rgba(255,255,255,.10);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:
+        radial-gradient(900px 420px at 30% 10%, rgba(255,255,255,.08), transparent 60%),
+        radial-gradient(700px 360px at 80% 35%, rgba(255,255,255,.06), transparent 65%),
+        var(--bg);
+      color:var(--text);
+      padding:18px 12px 40px;
+    }
+    .wrap{max-width:820px;margin:0 auto;}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:10px;margin:6px 2px 14px;
+      color:var(--muted2);font-size:12px;
+    }
+    .brand{display:flex;align-items:center;gap:8px;}
+    .dot{width:10px;height:10px;border-radius:999px;background:rgba(255,255,255,.65);}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent 35%), var(--card);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .section{margin-bottom:14px;}
+    .divider{height:12px;}
+    .kicker{
+      display:inline-flex;gap:8px;align-items:center;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:7px 10px;border-radius:999px;
+      color:var(--muted2);font-size:12px;margin-bottom:12px;
+    }
+    .kicker b{color:rgba(255,255,255,.85);font-weight:800}
+    h1,h2{margin:0}
+    .h0{font-size:30px;line-height:1.06;font-weight:950;letter-spacing:-.3px;margin:0 0 10px;}
+    .h1{font-size:34px;line-height:1.04;font-weight:980;letter-spacing:-.3px;margin:0 0 10px;}
+    @media (max-width:420px){ .h0{font-size:26px;} .h1{font-size:29px;} }
+    .sub{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.42;}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;}
+    .btn{
+      appearance:none;border:none;cursor:pointer;
+      border-radius:16px;
+      padding:14px 14px;
+      font-weight:950;
+      font-size:15px;
+      width:100%;
+    }
+    .btnMain{background:var(--btn);color:var(--btnText);}
+    .btnGhost{background:var(--ghost);color:var(--text);border:1px solid var(--line);}
+    .btn:disabled{opacity:.35;cursor:not-allowed}
+    .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+    .pill{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:8px 10px;border-radius:999px;
+      font-size:12px;color:var(--muted);
+    }
+    .mini{margin-top:14px;color:var(--muted2);font-size:11px;line-height:1.35;}
+    .topGrid{display:grid;grid-template-columns: 1.1fr .9fr;gap:14px;align-items:stretch;}
+    @media (max-width:900px){ .topGrid{grid-template-columns:1fr;} }
+    .imgSlot{
+      height:100%;
+      min-height:220px;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        linear-gradient(180deg, rgba(7,7,10,.25), rgba(7,7,10,.55)),
+        url("top.jpg") center/cover no-repeat;
+      overflow:hidden;
+    }
+    .howTitle{font-size:14px;color:rgba(255,255,255,.88);font-weight:950;margin:0 0 10px;}
+    .steps{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none;}
+    .step{
+      display:flex;gap:10px;align-items:flex-start;
+      padding:12px;border-radius:18px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+    }
+    .badge{
+      width:28px;height:28px;border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,.10);
+      border:1px solid var(--line);
+      font-weight:950;color:rgba(255,255,255,.9);
+      flex:0 0 auto;
+    }
+    .step p{margin:0;color:var(--muted);font-size:13px;line-height:1.35;}
+    .step b{color:rgba(255,255,255,.9);}
+    .quizWrap{display:flex;justify-content:center;}
+    .quizCard{
+      width:100%;
+      max-width:820px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent 38%), var(--card2);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .quizTop{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px;}
+    .quizTop .t{font-weight:980;color:rgba(255,255,255,.90);font-size:14px;}
+    .quizTop .s{color:var(--muted2);font-size:12px;}
+    .prog{height:9px;background:rgba(255,255,255,.07);border-radius:999px;overflow:hidden;margin-bottom:14px;}
+    .prog>div{height:100%;width:0%;background:rgba(255,255,255,.74);transition:width .25s ease;}
+    .q{font-size:22px;font-weight:980;line-height:1.16;margin:4px 0 14px;}
+    @media (max-width:420px){ .q{font-size:19px;} }
+    .answers{display:flex;flex-direction:column;gap:10px;margin-bottom:14px;}
+    .a{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:12px 12px;
+      cursor:pointer;
+      user-select:none;
+      transition:transform .06s ease, background .15s ease, border-color .15s ease;
+      font-weight:900;
+      color:rgba(255,255,255,.95);
+    }
+    .a:hover{transform:translateY(-1px);}
+    .a.sel{border-color:rgba(255,255,255,.70);background:rgba(255,255,255,.10);}
+    .field{display:flex;flex-direction:column;gap:8px;}
+    .label{font-size:12px;color:var(--muted2);}
+    .input{
+      border:1px solid rgba(255,255,255,.16);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      border-radius:18px;
+      padding:12px 12px;
+      outline:none;
+      font-size:15px;
+    }
+    .input:focus{border-color:rgba(255,255,255,.55);}
+    .actions{display:flex;gap:10px;}
+    .actions .btn{width:auto;flex:1;}
+    .hint{min-height:16px;color:var(--muted2);font-size:12px;margin-top:10px;}
+    .rBadge{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:44px;height:44px;border-radius:16px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.05);
+      margin:10px 0 8px;
+      font-size:18px;
+    }
+    .rHead{font-size:24px;font-weight:990;line-height:1.08;margin:6px 0 10px;}
+    .rText{color:var(--muted);font-size:14px;line-height:1.42;margin-bottom:12px;}
+    .rList{margin:0 0 14px;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.35;}
+    .callout{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      padding:12px 12px;border-radius:18px;
+      color:rgba(255,255,255,.88);
+      font-weight:900;
+      margin:12px 0 12px;
+    }
+    .footerLinks{
+      margin-top:14px;
+      color:var(--muted2);
+      font-size:11px;
+      line-height:1.4;
+      display:flex;gap:10px;flex-wrap:wrap;
+    }
+    .footerLinks a{color:rgba(255,255,255,.70);text-decoration:underline;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><span class="dot"></span> <span>Экспресс-проверка</span></div>
+      <div>GEO: KZ • RU</div>
+    </div>
+
+    <section class="section">
+      <div class="topGrid">
+        <div class="card">
+          <div class="kicker">🧩 <b>Сомнения</b> — это сигнал</div>
+          <div class="h0">Чувствуешь подвох?</div>
+          <p class="sub">
+            Есть сомнения в информации, словах или человеке?
+            Иногда мы не можем объяснить это логикой — но внутреннее ощущение редко появляется просто так.
+          </p>
+          <div class="pills">
+            <div class="pill">🧠 самоанализ</div>
+            <div class="pill">⚠️ тревожные сигналы</div>
+            <div class="pill">✅ без регистрации</div>
+          </div>
+          <div class="mini">
+            Развлекательный формат. Результаты носят ознакомительный характер и не являются утверждением фактов.
+          </div>
+        </div>
+        <div class="card"><div class="imgSlot" aria-label="Картинка top.jpg"></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="heroBlock">
+      <div class="topGrid">
+        <div class="card">
+          <div class="kicker">⚠️ <b>Проверка правды</b></div>
+          <div class="h1">Тебе могут<br>врать прямо сейчас</div>
+          <p class="sub">
+            По статистике, люди врут близким и коллегам в среднем <b>1–3 раза в день</b>.
+            Иногда это безобидная ложь без последствий.<br><br>
+            А иногда — ложь, которая <b>меняет решения, отношения и жизнь</b>.
+            В наших силах — <b>не дать себя обмануть</b>.
+          </p>
+          <div class="ctaRow">
+            <button class="btn btnMain" id="startBtn">🔥 Пройти тест и проверить ситуацию</button>
+            <button class="btn btnGhost" id="scrollBtn">Сначала посмотреть вопросы</button>
+          </div>
+          <div class="pills">
+            <div class="pill">⏱ 1 минута</div>
+            <div class="pill">🧠 7 вопросов</div>
+            <div class="pill">🎙 продолжение: аудио в Telegram</div>
+            <div class="pill">🔒 без регистрации</div>
+          </div>
+          <div class="mini">
+            Развлекательный формат. Результаты носят ознакомительный характер и не являются утверждением фактов.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="howTitle">Как это работает</div>
+          <ul class="steps">
+            <li class="step"><div class="badge">1</div><p><b>Ты отвечаешь</b> на вопросы и вводишь имя (это усиливает вовлечение).</p></li>
+            <li class="step"><div class="badge">2</div><p>Система показывает <b>уровень риска</b> по тесту (низкий / средний / повышенный).</p></li>
+            <li class="step"><div class="badge">3</div><p>Дальше — <b>полный анализ</b> по реальному голосу в Telegram (10–60 сек).</p></li>
+          </ul>
+          <div class="mini">
+            Важно: это не «доказательство», а оценка по паттернам поведения/речи. Окончательные выводы — после аудио.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="quizWrap" id="quizAnchor">
+      <div class="quizCard" id="quizCard" style="display:none;">
+        <div class="quizTop">
+          <div class="t">Тест</div>
+          <div class="s" id="stepText">Вопрос 1 из 7</div>
+        </div>
+        <div class="prog"><div id="progBar"></div></div>
+
+        <div class="q" id="qText"></div>
+        <div class="answers" id="answers"></div>
+
+        <div class="actions">
+          <button class="btn btnGhost" id="backBtn" disabled>Назад</button>
+          <button class="btn btnMain" id="nextBtn" disabled>Далее</button>
+        </div>
+        <div class="hint" id="hint"></div>
+
+        <div class="mini">Развлекательный формат. Результаты носят ознакомительный характер и не являются утверждением фактов.</div>
+      </div>
+    </div>
+
+    <div class="quizWrap">
+      <div class="quizCard" id="resultCard" style="display:none;">
+        <div class="quizTop">
+          <div class="t">Результат</div>
+          <div class="s">Готово</div>
+        </div>
+        <div class="prog"><div style="width:100%;height:100%;background:rgba(255,255,255,.74)"></div></div>
+
+        <div class="rBadge" id="rBadge">⚠️</div>
+        <div class="rHead" id="rHead"></div>
+        <div class="rText" id="rText"></div>
+        <ul class="rList" id="rList"></ul>
+
+        <div class="callout">
+          Для полного анализа перейди в Telegram и отправь аудио (10–60 сек).
+        </div>
+
+        <button class="btn btnMain" id="tgBtn">🎙 Перейти в Telegram и проанализировать аудио</button>
+
+        <div class="mini">
+          *Переход в Telegram — следующий шаг анализа. Это не «доказательство», а оценка по тесту и сигналам речи.
+        </div>
+
+        <div class="footerLinks">
+          <a href="#privacy" onclick="alert('Добавь сюда свою Privacy Policy (можно отдельной страницей/текстом).');return false;">Privacy Policy</a>
+          <a href="#terms" onclick="alert('Добавь сюда Terms/Disclaimer (можно отдельной страницей/текстом).');return false;">Terms</a>
+          <span>© <span id="year"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * =========================
+     * JS (одна конверсия Binom + FB Pixel на TG кнопке)
+     * =========================
+     */
+
+    // --- Settings ---
+    const BOT_USERNAME = "LieScorebot"; // без @
+    const GEO = "kz";
+    const BINOM_CONVERSION_URL = "https://mobi-slon.com/click";
+
+    // FB Pixel events
+    const FB_EVENTS = {
+      quizStarted: "QuizStarted",
+      quizCompleted: "QuizCompleted",
+      goTelegram: "GoTelegramAfterQuiz" // это будет на кнопке TG
+    };
+
+    function fbTrackCustom(name){
+      try{
+        if(!ENABLE_PIXEL) return;
+        if(typeof fbq === "function") fbq("trackCustom", name);
+      }catch(e){}
+    }
+
+    // --- UTM capture ---
+    function getQueryObj(){
+      const p = new URLSearchParams(location.search);
+      const obj = {};
+      for(const [k,v] of p.entries()) obj[k] = v;
+      return obj;
+    }
+    function pick(obj, keys){
+      const out = {};
+      for(const k of keys) if(obj[k]) out[k] = obj[k];
+      return out;
+    }
+    function saveUTM(){
+      const q = getQueryObj();
+      const data = {
+        ...pick(q, ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"]),
+        ts: Date.now()
+      };
+      const prev = localStorage.getItem("lz_utm");
+      if(Object.keys(data).length > 1){
+        localStorage.setItem("lz_utm", JSON.stringify(data));
+      } else if(!prev){
+        localStorage.setItem("lz_utm", JSON.stringify({ts: Date.now()}));
+      }
+    }
+    function loadUTM(){
+      try{ return JSON.parse(localStorage.getItem("lz_utm") || "{}"); }
+      catch(e){ return {}; }
+    }
+    saveUTM();
+
+    // --- Quiz data ---
+    const RADIO_ANSWERS = [
+      { text: "Да",           score: 3 },
+      { text: "Скорее да",    score: 2 },
+      { text: "Не уверен(а)", score: 1 },
+      { text: "Скорее нет",   score: 0 },
+    ];
+
+    const QUESTIONS = [
+      { type:"radio", key:"q1", text:"Ты когда-нибудь ловил(а) его/её на лжи?" },
+      { type:"radio", key:"q2", text:"Есть ощущение, что тебе не договаривают правду?" },
+      { type:"input", key:"name", text:"Как зовут человека, по которому у тебя есть сомнения?", placeholder:"Имя (можно без фамилии)", required:true, minLen:2 },
+      { type:"radio", key:"q3", text:"Он(а) начинает нервничать, когда ты задаёшь обычные вопросы?" },
+      { type:"input", key:"relation", text:"Кем тебе приходится этот человек?", placeholder:"Например: парень, жена, девушка", required:false, minLen:2 },
+      { type:"radio", key:"q4", text:"Были ли противоречия в рассказах (даже в мелочах)?" },
+      { type:"radio", key:"q5", text:"Если честно — ты сейчас чувствуешь тревогу?" },
+    ];
+
+    function getRisk(score){
+      if(score >= 10) return "high";
+      if(score >= 5) return "mid";
+      return "low";
+    }
+
+    function relationCode(raw){
+      const s = (raw || "").toLowerCase();
+      if(!s) return "na";
+      if(s.includes("жена") || s.includes("муж") || s.includes("супруг")) return "sp";
+      if(s.includes("пар") || s.includes("дев") || s.includes("бойф") || s.includes("герл")) return "pr";
+      if(s.includes("быв")) return "ex";
+      return "ot";
+    }
+
+    function escapeHtml(str){
+      return (str || "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+      }[m]));
+    }
+
+    // --- DOM ---
+    const quizCard   = document.getElementById("quizCard");
+    const resultCard = document.getElementById("resultCard");
+
+    const startBtn  = document.getElementById("startBtn");
+    const scrollBtn = document.getElementById("scrollBtn");
+    const quizAnchor = document.getElementById("quizAnchor");
+
+    const stepText = document.getElementById("stepText");
+    const progBar  = document.getElementById("progBar");
+    const qText    = document.getElementById("qText");
+    const answers  = document.getElementById("answers");
+    const backBtn  = document.getElementById("backBtn");
+    const nextBtn  = document.getElementById("nextBtn");
+    const hint     = document.getElementById("hint");
+
+    const rBadge = document.getElementById("rBadge");
+    const rHead  = document.getElementById("rHead");
+    const rText  = document.getElementById("rText");
+    const rList  = document.getElementById("rList");
+    const tgBtn  = document.getElementById("tgBtn");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // --- State ---
+    let idx = 0;
+    const radioScores = {};
+    const inputData = { name:"", relation:"" };
+
+    function radioTotal(){
+      return Object.values(radioScores).reduce((s,v)=> s + (v || 0), 0);
+    }
+
+    function setNextEnabled(on){ nextBtn.disabled = !on; }
+
+    function setProgress(){
+      const total = QUESTIONS.length;
+      stepText.textContent = `Вопрос ${idx+1} из ${total}`;
+      const pct = Math.round((idx / total) * 100);
+      progBar.style.width = `${pct}%`;
+    }
+
+    function render(){
+      setProgress();
+      hint.textContent = "";
+      backBtn.disabled = (idx === 0);
+      nextBtn.textContent = (idx === QUESTIONS.length - 1) ? "Получить результат" : "Далее";
+
+      const q = QUESTIONS[idx];
+      qText.textContent = q.text;
+      answers.innerHTML = "";
+
+      if(q.type === "radio"){
+        for(const opt of RADIO_ANSWERS){
+          const div = document.createElement("div");
+          div.className = "a" + (radioScores[q.key] === opt.score ? " sel" : "");
+          div.textContent = opt.text;
+
+          div.addEventListener("click", () => {
+            radioScores[q.key] = opt.score;
+            [...answers.children].forEach(x => x.classList.remove("sel"));
+            div.classList.add("sel");
+            setNextEnabled(true);
+          });
+
+          answers.appendChild(div);
+        }
+        setNextEnabled(typeof radioScores[q.key] === "number");
+        return;
+      }
+
+      if(q.type === "input"){
+        const field = document.createElement("div");
+        field.className = "field";
+
+        const lbl = document.createElement("div");
+        lbl.className = "label";
+        lbl.textContent = q.required ? "Обязательное поле" : "Необязательно";
+        field.appendChild(lbl);
+
+        const inp = document.createElement("input");
+        inp.className = "input";
+        inp.type = "text";
+        inp.placeholder = q.placeholder || "";
+        inp.autocomplete = "off";
+        inp.value = (q.key === "name") ? inputData.name : inputData.relation;
+
+        function validateAndStore(){
+          const val = inp.value.trim();
+          if(q.key === "name") inputData.name = val;
+          if(q.key === "relation") inputData.relation = val;
+
+          if(q.required){
+            const minLen = q.minLen || 2;
+            const ok = val.length >= minLen;
+            setNextEnabled(ok);
+            hint.textContent = (!ok && val.length > 0) ? `Минимум ${minLen} символа` : "";
+          } else {
+            setNextEnabled(true);
+            hint.textContent = "";
+          }
+        }
+
+        inp.addEventListener("input", validateAndStore);
+
+        field.appendChild(inp);
+        answers.appendChild(field);
+
+        validateAndStore();
+        setTimeout(()=>{ try{ inp.focus(); }catch(e){} }, 50);
+      }
+    }
+
+    function showQuiz(){
+      quizCard.style.display = "block";
+      quizCard.scrollIntoView({behavior:"smooth", block:"start"});
+      render();
+      fbTrackCustom(FB_EVENTS.quizStarted);
+    }
+
+    function showResult(){
+      const score = radioTotal();
+      const risk = getRisk(score);
+
+      const name = (inputData.name || "").trim();
+      const relation = (inputData.relation || "").trim();
+      const relCode = relationCode(relation);
+      const named = name ? "named" : "noname";
+      const utm = loadUTM();
+
+      const src = (utm.utm_source || "").toLowerCase().slice(0,10) || "na";
+      const cmp = (utm.utm_campaign || "").toLowerCase().slice(0,10) || "na";
+      const startParam = `${GEO}_${risk}_${score}_${relCode}_${named}_${src}_${cmp}`;
+      const tgLink = `https://t.me/${BOT_USERNAME}?start=${encodeURIComponent(startParam)}`;
+
+      let badge = "⚠️";
+      let head = "Обнаружены признаки возможной неискренности";
+      let text = "";
+      let list = [
+        "защитная реакция на простые вопросы",
+        "противоречия в деталях",
+        "уклончивые формулировки и “заученные” ответы"
+      ];
+
+      const who = name ? `<b>${escapeHtml(name)}</b>` : "этого человека";
+
+      if(risk === "low"){
+        badge = "🟡";
+        head = "Сильных сигналов мало — но сомнения не игнорируй";
+        text = `По тесту явных признаков немного. Но если интуиция цепляется — проверка голоса часто показывает напряжение, которое сложно спрятать словами.`;
+        list = [
+          "паузы/запинки в неудобные моменты",
+          "скачки тональности и эмоций",
+          "уход от прямых ответов"
+        ];
+      } else if(risk === "mid"){
+        badge = "🟠";
+        head = "Есть поводы насторожиться";
+        text = `По ответам видна связка сигналов, которая часто появляется, когда человек что-то скрывает. Для более точного вывода нужен анализ реального голоса ${who}.`;
+      } else {
+        badge = "🔴";
+        head = "Сигналы выражены — игнорировать рискованно";
+        text = `Комбинация ответов указывает на повышенный риск. Это не доказательство, но повод действовать осторожнее и проверить голос ${who} — он выдаёт напряжение сильнее любых слов.`;
+      }
+
+      rBadge.textContent = badge;
+      rHead.innerHTML = head;
+      rText.innerHTML = `
+        ${text}<br><br>
+        <span style="color:rgba(255,255,255,.72)">
+          ${name ? `Мы учли ответы, связанные с <b>${escapeHtml(name)}</b>.` : `Мы учли ответы теста.`}
+          ${relation ? ` Тип связи: <b>${escapeHtml(relation)}</b>.` : ``}
+        </span>
+      `;
+      rList.innerHTML = list.map(x => `<li>${x}</li>`).join("");
+
+      quizCard.style.display = "none";
+      resultCard.style.display = "block";
+      resultCard.scrollIntoView({behavior:"smooth", block:"start"});
+
+      fbTrackCustom(FB_EVENTS.quizCompleted);
+
+      // TG click handler — единая точка
+      tgBtn.disabled = false;
+      tgBtn.textContent = "🎙 Перейти в Telegram и проанализировать аудио";
+
+      tgBtn.onclick = () => {
+        // анти-даблклик
+        if (sessionStorage.getItem("lz_tg_sent") === "1") {
+          location.href = tgLink;
+          return;
+        }
+        sessionStorage.setItem("lz_tg_sent", "1");
+
+        tgBtn.disabled = true;
+        tgBtn.textContent = "Отправляем…";
+
+        // ✅ FB Pixel на кнопку TG
+        fbTrackCustom(FB_EVENTS.goTelegram);
+        // (если хочешь стандартное событие — раскомментируй)
+        // try { if(ENABLE_PIXEL && typeof fbq==="function") fbq("track","Lead"); } catch(e){}
+
+        // ✅ Binom conversion только на кнопку TG
+        try{
+          if (typeof BPixelJS !== "undefined" && BPixelJS && typeof BPixelJS.conversion === "function") {
+            BPixelJS.conversion({ url: BINOM_CONVERSION_URL });
+          }
+        }catch(e){}
+
+        // дать 180мс, чтобы оба пикселя улетели
+        setTimeout(() => {
+          location.href = tgLink;
+        }, 180);
+      };
+    }
+
+    // --- Events ---
+    startBtn.addEventListener("click", showQuiz);
+
+    scrollBtn.addEventListener("click", () => {
+      quizCard.style.display = "block";
+      quizAnchor.scrollIntoView({behavior:"smooth", block:"start"});
+      if(!qText.textContent.trim()) render();
+    });
+
+    backBtn.addEventListener("click", () => {
+      if(idx <= 0) return;
+      idx--;
+      render();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      const q = QUESTIONS[idx];
+
+      if(q.type === "input" && q.required){
+        const val = (inputData.name || "").trim();
+        const minLen = q.minLen || 2;
+        if(val.length < minLen){
+          hint.textContent = `Введи минимум ${minLen} символа`;
+          return;
+        }
+      }
+
+      if(idx === QUESTIONS.length - 1){
+        showResult();
+        return;
+      }
+
+      idx++;
+      render();
+    });
+
+    // init
+    render();
+  </script>
+</body>
+</html>
